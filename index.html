@@ -1,0 +1,333 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ru" lang="ru">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta id="viewport" name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Gefest Logistic</title>
+    <META NAME="description" CONTENT="Gefest Logistic" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="shortcut icon" type="image/x-icon"  href="favicon.ico"/>
+
+    <meta name="cmsmagazine" content="7a07349553113a03d820998046df0929" />
+    <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+
+    <!-- Add fancyBox -->
+    <link rel="stylesheet" href="js/fancybox/jquery.fancybox.css" type="text/css" media="screen" />
+    <script type="text/javascript" src="js/fancybox/jquery.fancybox.pack.js"></script>
+    <script type="text/javascript" src="js/fancybox/jquery.mousewheel-3.0.6.pack.js"></script>
+    <script type="text/javascript" src="js/jquery.placeholder.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/global.css" />
+    <link rel="stylesheet" type="text/css" href="css/print.css" />
+    <link rel="stylesheet" type="text/css" href="css/jquery.bxslider.css" />
+    <? // TODO Добавить стили чекбоксов и селектов ?>
+    <script type="text/javascript" src="js/jquery.bxslider.min.js"></script>
+    <script src="js/jquery.form.min.js"></script>
+    <script src="js/jquery.maskedinput.js"></script>
+    <script src="js/global.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/modernizr.custom.77745.js"></script>
+    <script src="js/jquery.placeholder.js"></script>
+
+    <script src="js/retina.js"></script>
+
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<div class="container">
+    <header>
+		<div class="header-bottom">
+			<div class="content-center">
+				<div class="columns">
+					<div class="header-logo">
+						Gefest Logistic
+					</div>
+					<div class="header-phone">
+						<a onclick="location.href = 'tel:'+$(this).text().replace(/(\s|\(|\)|\-)/g,'')+'';" href="#">
+						<span>+7 (495) 23-21-091</span>
+						</a>
+					</div>
+					<div class="header-form">
+						<a href="#callback" class="callback" data-action="pupop">Заказать обратный звонок</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+    <section id="intro">
+		<div class="content-center">
+			<div class="columns">
+				<div class="column left-column">
+					<h1>Таможенный Брокер</h1>
+					<div class="sub-title">Доставка товаров из&nbsp;любой точки мира</div>
+					<div class="description">Работаем с&nbsp;юридическими и&nbsp;физическими лицами и&nbsp;доставляем любые партии: от&nbsp;единичной упаковки до&nbsp;железнодорожного состава.</div>
+				</div>
+				<div class="column right-column">
+					<div class="form">
+						<div class="title">Заказать консультацию специалиста:</div>
+						<form id="consultation" action="ajax/" method="POST"  class="async_form">
+							<input type="hidden" name="FORM_NAME" value="Заказать консультацию специалиста" />
+							<input type="hidden" name="FORM_ID" value="consultation" />
+							<div class="field"><input type="text" name="NAME" placeholder="Ваше имя" /></div>
+							<div class="field"><input type="text" name="PHONE" placeholder="Телефон" /></div>
+							<input type="submit" value="отправить" />
+							<div class="status">Заявка отправлена. Спасибо!</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="advantages-v1">
+		<div class="content-center">
+			<div class="title">Ваш груз находится в&nbsp;другой стране?</div>
+			<div class="sub-title">Мы обеспечим:</div>
+			<div class="columns">
+				<div class="column">
+					<img src="images/advantages-1.png" width="154" height="154" alt="Логистику и транспортировку" title="Логистику и транспортировку" />
+					Логистику и транспортировку
+				</div>
+				<div class="column">
+					<img src="images/advantages-2.png" width="154" height="154" alt="Таможенное оформление" title="Таможенное оформление" />
+					Таможенное оформление
+				</div>
+				<div class="column">
+					<img src="images/advantages-3.png" width="154" height="154" alt="Экспедирование" title="Экспедирование" />
+					Экспедирование
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="advantages-v2">
+		<div class="content-center">
+			<div class="columns">
+				<div class="column">Оптимизируем доставку по&nbsp;скорости или стоимости</div>
+				<div class="column">Предлагаем хорошие условия для доставки партий меньше стандартного контейнера</div>
+			</div>
+		</div>
+	</section>
+	<section class="form-standart-block">
+		<div class="content-center">
+			<div class="title">Оформите заявку на&nbsp;обслуживание</div>
+			<form action="ajax/" method="POST" id="form-1" class="form-standart async_form">
+				<input type="hidden" name="FORM_NAME" value="Оформите заявку на&nbsp;обслуживание #1" />
+				<input type="hidden" name="FORM_ID" value="form-1" />
+				<div class="field"><input type="text" name="NAME" placeholder="Ваше имя" /></div>
+				<div class="field"><input type="text" name="PHONE" placeholder="Телефон" /></div>
+				<div class="field"><input type="text" name="TIME" placeholder="Удобное время звонка" /></div>
+				<div class="submit">
+					<input type="submit" value="Отправить заявку" />
+				</div>
+				<div class="status">Заявка отправлена. Спасибо!</div>
+			</form>
+		</div>
+	</section>
+	<section class="advantages-v3">
+		<div class="content-center">
+			<div class="title">Когда вы оформите заявку:</div>
+			<div class="columns">
+				<div class="column">
+					<div class="num-1">
+						<div class="sub-title">Личный менеджер</div>
+						<div class="description">Вам назначат личного менеджера. Он&nbsp;запросит нужные документы и&nbsp;составит договор
+						на&nbsp;брокерское обслуживание.</div>
+					</div>
+					<div class="num-2">
+						<div class="sub-title">Документы</div>
+						<div class="description">Юридический отдел поможет вам собрать документы для таможни и&nbsp;рассчитает таможенный сбор.</div>
+					</div>
+					<div class="num-3">
+						<div class="sub-title">Транспортировка</div>
+						<div class="description">Отдел логистики доставит товар с&nbsp;точки отгрузки на&nbsp;таможенный склад и&nbsp;организует досмотр.</div>
+						<div class="info">
+							У&nbsp;вашего личного менеджера всегда есть информация
+							о&nbsp;местонахождении груза и&nbsp;ожидаемом сроке прибытия.
+						</div>
+					</div>
+				</div>
+				<div class="column">
+					<div class="num-4">
+						<div class="sub-title">Таможня</div>
+						<div class="description">Юридический отдел подаст документы
+						в&nbsp;таможню, решит возникшие вопросы и&nbsp;уплатит таможенные сборы.</div>
+					</div>
+					<div class="num-5">
+						<div class="sub-title">Оплата</div>
+						<div class="description">Когда груз пройдет таможенную очистку и&nbsp;будет выпущен с&nbsp;таможенного склада, личный менеджер свяжется с&nbsp;вами и&nbsp;выставит счет.</div>
+					</div>
+					<div class="num-6">
+						<div class="sub-title">Доставка</div>
+						<div class="description">После оплаты счета груз будет доставлен
+						по&nbsp;указанному адресу, а&nbsp;вы&nbsp;получите полный набор документов, легализующих пребывание груза в&nbsp;России, включая лицензии
+						и&nbsp;сертификаты.</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="advantages-v4">
+		<div class="content-center">
+			<div class="columns">
+				<div class="column right">
+					<div class="title">Надежность</div>
+					<ul>
+						<li>Мы&nbsp;работаем таможенными брокерами больше 15&nbsp;лет.</li>
+						<li>Мы&nbsp;адекватно оцениваем риски задержек и&nbsp;прописываем их&nbsp;в&nbsp;контракте.</li>
+						<li>За&nbsp;это время мы&nbsp;доставили тысячи грузов.</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="partners">
+		<div class="content-center">
+			<div class="block-title h1">
+				С нами работали и остались довольны:
+			</div>
+			<div class="slider-wrapper">
+				<div class="slider">
+					<div class="slides bxslider">
+						<div class="slide feedback-item">
+							<div class="slide-row">
+								<div class="partner-item">
+									<div class="pse-table">
+										<div class="pse-table-cell">
+											<img src="images/partners/partner-1.png" />
+										</div>
+									</div>
+								</div>
+								<div class="partner-item">
+									<div class="pse-table">
+										<div class="pse-table-cell">
+											<img src="images/partners/partner-3.png" />
+										</div>
+									</div>
+								</div>
+								<div class="partner-item">
+									<div class="pse-table">
+										<div class="pse-table-cell">
+											<img src="images/partners/partner-1.png" />
+										</div>
+									</div>
+								</div>
+								<div class="partner-item">
+									<div class="pse-table">
+										<div class="pse-table-cell">
+											<img src="images/partners/partner-3.png" />
+										</div>
+									</div>
+								</div>
+								<div class="partner-item">
+									<div class="pse-table">
+										<div class="pse-table-cell">
+											<img src="images/partners/partner-1.png" />
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="slide feedback-item">
+						<div class="slide-row">
+							<div class="partner-item">
+								<div class="pse-table">
+									<div class="pse-table-cell">
+										<img src="images/partners/partner-1.png" />
+									</div>
+								</div>
+							</div>
+							<div class="partner-item">
+								<div class="pse-table">
+									<div class="pse-table-cell">
+										<img src="images/partners/partner-3.png" />
+									</div>
+								</div>
+							</div>
+							<div class="partner-item">
+								<div class="pse-table">
+									<div class="pse-table-cell">
+										<img src="images/partners/partner-1.png" />
+									</div>
+								</div>
+							</div>
+							<div class="partner-item">
+								<div class="pse-table">
+									<div class="pse-table-cell">
+										<img src="images/partners/partner-3.png" />
+									</div>
+								</div>
+							</div>
+							<div class="partner-item">
+								<div class="pse-table">
+									<div class="pse-table-cell">
+										<img src="images/partners/partner-1.png" />
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="form-standart-block">
+		<div class="content-center">
+			<div class="title">Оформите заявку на&nbsp;обслуживание</div>
+			<form action="ajax/" method="POST" id="form-2" class="form-standart async_form">
+				<input type="hidden" name="FORM_NAME" value="Оформите заявку на&nbsp;обслуживание #2" />
+				<input type="hidden" name="FORM_ID" value="form-2" />
+				<div class="field"><input type="text" name="NAME" placeholder="Ваше имя" /></div>
+				<div class="field"><input type="text" name="PHONE" placeholder="Телефон" /></div>
+				<div class="field"><input type="text" name="TIME" placeholder="Удобное время звонка" /></div>
+				<div class="submit">
+					<input type="submit" value="Отправить заявку" />
+				</div>
+				<div class="status">Заявка отправлена. Спасибо!</div>
+			</form>
+		</div>
+	</section>
+
+	<div id="callback">
+		<div class="title">Заказать обратный звонок</div>
+			<form id="callback-form" action="ajax/" method="POST"  class="form-standart async_form">
+				<input type="hidden" name="FORM_NAME" value="Заказать обратный звонок" />
+				<input type="hidden" name="FORM_ID" value="callback-form" />
+				<div class="field"><input type="text" name="NAME" placeholder="Ваше имя" /></div>
+				<div class="field"><input type="text" name="PHONE" placeholder="Телефон" /></div>
+				<div class="field"><input type="text" name="TIME" placeholder="Удобное время звонка" /></div>
+				<div class="submit">
+					<input type="submit" value="Отправить заявку" />
+				</div>
+				<div class="status">Заявка отправлена. Спасибо!</div>
+			</form>
+	</div>
+	<footer>
+		<div class="content-center">
+			<div class="columns">
+				<div class="copyright_block">
+					<div class="name">Gefest Logistic</div>
+					<div class="copy">
+						<p>&copy;&nbsp;2015 Гефест Логистик</p>
+						<p>Копирование материала разрешено только со&nbsp;ссылкой на&nbsp;этот сайт</p>
+					</div>
+				</div>
+				<div class="phone_block">
+					<div class="phone">
+						<a onclick="location.href = 'tel:'+$(this).text().replace(/(\s|\(|\)|\-)/g,'')+'';" href="#">
+							<span>+7 (495) 23-21-091</span>
+						</a>
+					</div>
+					<div class="footer-form">
+						<a href="#callback" class="callback" data-action="pupop">Заказать обратный звонок</a>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+	</footer>
+</div>
+</body>
+</html>
